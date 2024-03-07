@@ -21,7 +21,7 @@ void input() {                       // Procedur untuk input
 	cout << "====================" << endl;    // Output ke layar
 
 	for (int i = 0; i < n; i++) {              // looping dengan 1 dimulai dari 0 hingga n-1
-		cout << "Data Ke-" << (i + 1) << "; ";    // Output ke layar
+		cout << "Data Ke-" << (i + 1) << ": ";    // Output ke layar
 		cin >> a[i];                              // input dari pengguna
 
 	}
@@ -52,4 +52,15 @@ void bubbleSortArray() {                         // Prosedur untuk mengurutkan a
 		}
 	}
 }
+
+
+int main()
+{
+	input();                   // Memanggil read()
+	bubbleSortArray();         // Memanggil bubbleSortArray()
+	display();                 // Memanggil display()
+	return 0;
+
+}
+
 
