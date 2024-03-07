@@ -39,3 +39,17 @@ void display() {                                // Prosedur untuk menampilkan ha
 	cout << endl;                                // Output Baris kosong
 }
 
+void bubbleSortArray() {                         // Prosedur untuk mengurutkan array dengan metode bubble sort
+	int pass = 1;                                // step 1
+
+	for (pass; pass <= n - 1; pass++) {        // looping dengan i dimulai dari 1 hingga n-1
+		for (int j = 0; j <= n - 1 - pass; j++) {  // looping dengan j dimulai dari 0 hingga n-1
+			if (a[j] > a[j + 1]) {                // jika nilai pada a[j] lebih besar dari a[j + 1]
+				int temp = a[j];                  // simpan nilai a[j] ke variabel semntara temp
+				a[j] = a[j + 1];                  // Asssign nilai a[j + 1] ke a [j]
+				a[j + 1] = temp;                  // Asssign nilai temp ke a[j + 1]
+			}
+		}
+	}
+}
+
